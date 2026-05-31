@@ -21,7 +21,8 @@
     "clean": "rimraf dist"
   },
   "dependencies": {
-    "@tsubame/renderer-protocol": "workspace:*"
+    "@tsubame/renderer-protocol": "workspace:*",
+    "hayate-adapter-web": "workspace:*"
   },
   "devDependencies": {
     "rimraf": "^6.0.1"

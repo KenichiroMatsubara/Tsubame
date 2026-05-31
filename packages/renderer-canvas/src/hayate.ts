@@ -20,8 +20,10 @@ export interface HayateWasm {
   element_set_text(id: number, text: string): void;
 
   /**
-   * 蓄積された Interaction Event を `[kind_code, element_id]` の繰り返し
-   * （flat Float64Array）で返す。呼び出しでキューは消費される。
+   * 蓄積された Interaction Event を `[kind_code, element_id]` の繰り返しで返す。
+   * 呼び出しでキューは消費される。
+   * Hayate WASM は Array<number> を返す（wasm-bindgen js_sys::Array）ため
+   * ArrayLike<number> で受ける。
    */
-  poll_events(): Float64Array;
+  poll_events(): ArrayLike<number>;
 }

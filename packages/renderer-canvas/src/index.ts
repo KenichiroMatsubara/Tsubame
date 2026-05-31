@@ -5,6 +5,7 @@ export {
 } from './canvas-renderer.js';
 export type { CanvasRendererOptions } from './canvas-renderer.js';
 export type { HayateWasm } from './hayate.js';
+export { initCanvasRenderer } from './init.js';
 export {
   OP,
   OP_SLOTS,

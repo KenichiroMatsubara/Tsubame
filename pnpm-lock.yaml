@@ -15,6 +15,8 @@ importers:
         specifier: ^5.7.2
         version: 5.9.3
 
+  /HayateProject/Hayate/examples/web-demo/pkg: {}
+
   examples/hello-world:
     dependencies:
       '@tsubame/renderer-canvas':
@@ -45,6 +47,9 @@ importers:
       '@tsubame/renderer-protocol':
         specifier: workspace:*
         version: link:../renderer-protocol
+      hayate-adapter-web:
+        specifier: workspace:*
+        version: link:../../HayateProject/Hayate/examples/web-demo/pkg
     devDependencies:
       rimraf:
         specifier: ^6.0.1
